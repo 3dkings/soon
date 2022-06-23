@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="Cache-Control" content="no-cache">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="mobile-web-app-capable" content="yes">
+	<link rel="apple-touch-icon" href="logo.png">
+	<link rel="icon" href="logo.png">
+	<link rel="stylesheet" href="./styles/soon.css">
+	<title>Lazy Lions 3D Kings</title>
+	<meta name="description" content="Lazy Lions 3D Kings">
+	<script type="text/javascript" src="dat.gui.min.js"></script>
+</head>
+
+<body>
+	<canvas id="myCanvas"></canvas>
+	<div id="3dlogo" style='cursor:pointer;color:#ffffff;margin: 0;position: absolute;top: 50%;left: 50%;-ms-transform: translate(-50%, -50%);transform: translate(-50%, -50%);'><img class="zoom" width='500' src="https://tele360.s3.amazonaws.com/logo.png" crossorigin="anonymous" />
+		<div class="textzoom">COMING SOON!</div>
+	</div>
+	<!-- Example -->
+	<div id="msg" class="subline">
+        <span>Click logo and swipe around to get the party started! 3D eyes Lazy Lions holders DM <a href="https://twitter.com/johnteryx" target="_blank">@johnteryx</a> for private twitter group acess</span>
+        <!-- <span id="Volume"><img  width="64"></span> -->
+ </div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script src="./script.js"></script>
+	<script>
+	$(window).load(function() {
+		$('img.zoom').addClass('element-animation');
+		$('.textzoom').addClass('text-animation');
+	});
+	</script>
+</body>
+</html>

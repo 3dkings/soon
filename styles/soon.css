@@ -1,0 +1,215 @@
+* {
+     user-select: none;
+}
+ html, body {
+     overflow: hidden;
+     background-color: #000;
+}
+ body {
+     margin: 0;
+     position: fixed;
+     width: 100%;
+     height: 100%;
+}
+ canvas {
+     width: 100%;
+     height: 100%;
+}
+ .dg {
+     opacity: 0.9;
+}
+ .dg .property-name {
+     overflow: visible;
+}
+ @font-face {
+     font-family: 'iconfont';
+     src: url('iconfont.ttf') format('truetype');
+}
+ .bigFont {
+     font-size: 150%;
+     color: #8C8C8C;
+}
+ .cr.function.appBigFont {
+     font-size: 150%;
+     line-height: 27px;
+     color: #A5F8D3;
+     background-color: #023C40;
+}
+ .cr.function.appBigFont .property-name {
+     float: none;
+}
+ .cr.function.appBigFont .icon {
+     position: sticky;
+     bottom: 27px;
+}
+ .icon {
+     font-family: 'iconfont';
+     font-size: 130%;
+     float: right;
+}
+ .twitter:before {
+     content: 'a';
+}
+ .github:before {
+     content: 'b';
+}
+ .app:before {
+     content: 'c';
+}
+ .discord:before {
+     content: 'd';
+}
+ .zoom {
+     transform: rotate(0deg) scaleX(0) scaleY(0) skewX(0deg) skewY(0deg);
+     -moz-transform: rotate(0deg) scaleX(0) scaleY(0) skewX(0deg);
+     -webkit-transform: rotate(0deg) scaleX(0) scaleY(0) skewX(0deg);
+     -o-transform: rotate(0deg) scaleX(0) scaleY(0) skewX(0deg);
+     -ms-transform: rotate(0deg) scaleX(0) scaleY(0) skewX(0deg);
+}
+ .element-animation {
+     animation: animationFrames linear 500ms;
+     animation-iteration-count: 1;
+     transform-origin: ;
+     -webkit-animation: animationFrames linear 500ms;
+     -webkit-animation-iteration-count: 1;
+     -webkit-transform-origin: ;
+     -moz-animation: animationFrames linear 500ms;
+     -moz-animation-iteration-count: 1;
+     -moz-transform-origin: ;
+     -o-animation: animationFrames linear 500ms;
+     -o-animation-iteration-count: 1;
+     -o-transform-origin: ;
+     -ms-animation: animationFrames linear 500ms;
+     -ms-animation-iteration-count: 1;
+     -ms-transform-origin: ;
+     -moz-transform: rotate(0deg) scaleX(1) scaleY(1) skewX(0deg);
+     -webkit-transform: rotate(0deg) scaleX(1) scaleY(1) skewX(0deg);
+     -o-transform: rotate(0deg) scaleX(1) scaleY(1) skewX(0deg);
+     -ms-transform: rotate(0deg) scaleX(1) scaleY(1) skewX(0deg);
+}
+ .text-animation {
+     animation: animationFrames linear 1000ms;
+     animation-iteration-count: 1;
+     transform-origin: ;
+     -webkit-animation: animationFrames linear 1000ms;
+     -webkit-animation-iteration-count: 1;
+     -webkit-transform-origin: ;
+     -moz-animation: animationFrames linear 1000ms;
+     -moz-animation-iteration-count: 1;
+     -moz-transform-origin: ;
+     -o-animation: animationFrames linear 1000ms;
+     -o-animation-iteration-count: 1;
+     -o-transform-origin: ;
+     -ms-animation: animationFrames linear 1000ms;
+     -ms-animation-iteration-count: 1;
+     -ms-transform-origin: ;
+     -moz-transform: rotate(0deg) scaleX(1) scaleY(1) skewX(0deg);
+     -webkit-transform: rotate(0deg) scaleX(1) scaleY(1) skewX(0deg);
+     -o-transform: rotate(0deg) scaleX(1) scaleY(1) skewX(0deg);
+     -ms-transform: rotate(0deg) scaleX(1) scaleY(1) skewX(0deg);
+}
+ @keyframes animationFrames {
+     0% {
+         opacity: 0;
+         transform: rotate(0deg) scaleX(0) scaleY(0) skewX(0deg) skewY(0deg);
+    }
+     100% {
+         opacity: 1;
+         transform: rotate(0deg) scaleX(1) scaleY(1) skewX(0deg) skewY(0deg);
+    }
+}
+ @-moz-keyframes animationFrames {
+     0% {
+         opacity: 0;
+         -moz-transform: rotate(0deg) scaleX(0) scaleY(0) skewX(0deg) skewY(0deg);
+    }
+     100% {
+         opacity: 1;
+         -moz-transform: rotate(0deg) scaleX(1) scaleY(1) skewX(0deg) skewY(0deg);
+    }
+}
+ @-webkit-keyframes animationFrames {
+     0% {
+         opacity: 0;
+         -webkit-transform: rotate(0deg) scaleX(0) scaleY(0) skewX(0deg) skewY(0deg);
+    }
+     100% {
+         opacity: 1;
+         -webkit-transform: rotate(0deg) scaleX(1) scaleY(1) skewX(0deg) skewY(0deg);
+    }
+}
+ @-o-keyframes animationFrames {
+     0% {
+         opacity: 0;
+         -o-transform: rotate(0deg) scaleX(0) scaleY(0) skewX(0deg) skewY(0deg);
+    }
+     100% {
+         opacity: 1;
+         -o-transform: rotate(0deg) scaleX(1) scaleY(1) skewX(0deg) skewY(0deg);
+    }
+}
+ @-ms-keyframes animationFrames {
+     0% {
+         opacity: 0;
+         -ms-transform: rotate(0deg) scaleX(0) scaleY(0) skewX(0deg) skewY(0deg);
+    }
+     100% {
+         opacity: 1;
+         -ms-transform: rotate(0deg) scaleX(1) scaleY(1) skewX(0deg) skewY(0deg);
+    }
+}
+/* Keyframes */
+@keyframes wiggle {
+  0%, 7% {
+    transform: rotateZ(0);
+  }
+  15% {
+    transform: rotateZ(-15deg);
+  }
+  20% {
+    transform: rotateZ(10deg);
+  }
+  25% {
+    transform: rotateZ(-10deg);
+  }
+  30% {
+    transform: rotateZ(6deg);
+  }
+  35% {
+    transform: rotateZ(-4deg);
+  }
+  40%, 100% {
+    transform: rotateZ(0);
+  }
+}
+.textzoom{
+  color:#e1c19e; -webkit-text-stroke: 1px black;text-align:center;font-family: Helvetica, Arial,sans-serif;font-weight: bolder;
+  font-size: 22px;
+}
+ .subline {
+     position: absolute;
+     bottom:20px;
+     right:20px;
+     padding: 6px 18px;
+     border-radius: 20px;
+     background-color: #cd9d54;
+     color: #fff;
+     font-size: 13px;
+     font-family: Helvetica, Arial,sans-serif;
+     opacity: 1;
+     transform: translate3d(0px, 0%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+     transform-style: preserve-3d;
+}
+@media only screen and (max-width: 600px) {
+
+    img.zoom{
+      width: 300px !important;
+    }
+    .textzoom{font-size:14px;}
+    .subline{margin: auto;left: 10px;right: 10px;text-align: center;}
+}
+#Volume{-webkit-animation:wiggle .5s linear infinite;animation:wiggle .5s linear infinite;cursor:pointer}
+#Volume::before{content:"";position:absolute;inset:0;background:transparent url("https://goblintown.wtf/i/GT-mute-circle.png") no-repeat center center/64px;opacity:0;transform:translateY(-3px)}
+#Volume.off{-webkit-animation:none;animation:none}
+#Volume.off img{opacity:0}
+#Volume.off::before{opacity:1}
